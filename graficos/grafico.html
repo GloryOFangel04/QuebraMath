@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gráfico Dinâmico</title>
+  <link rel="stylesheet" href="graficos.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+  <h1>Gráfico de Colunas Dinâmico</h1>
+
+  <div class="form">
+    <input type="text" id="labelInput" placeholder="Nome (ex: Produto A)">
+    <input type="number" id="valueInput" placeholder="Valor (ex: 50)">
+    <button onclick="adicionarDado()">Adicionar</button>
+  </div>
+
+  <table id="tabelaDados">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <canvas id="grafico"></canvas>
+
+  <script src="graficos.js"></script>
+</body>
+</html>
